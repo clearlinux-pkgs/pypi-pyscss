@@ -5,7 +5,7 @@
 #
 Name     : pypi-pyscss
 Version  : 1.4.0
-Release  : 65
+Release  : 66
 URL      : https://files.pythonhosted.org/packages/92/30/64c818fd317e03138f98ca67800edb6a916f59fc07b3d7e535e84c3c333a/pyScss-1.4.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/92/30/64c818fd317e03138f98ca67800edb6a916f59fc07b3d7e535e84c3c333a/pyScss-1.4.0.tar.gz
 Summary  : pyScss, a Scss compiler for Python
@@ -17,8 +17,6 @@ Requires: pypi-pyscss-python = %{version}-%{release}
 Requires: pypi-pyscss-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
 BuildRequires : pcre-dev
-BuildRequires : pypi(enum34)
-BuildRequires : pypi(pathlib2)
 BuildRequires : pypi(six)
 BuildRequires : pypi-pytest
 BuildRequires : pypi-six
@@ -63,8 +61,6 @@ Summary: python3 components for the pypi-pyscss package.
 Group: Default
 Requires: python3-core
 Provides: pypi(pyscss)
-Requires: pypi(enum34)
-Requires: pypi(pathlib2)
 Requires: pypi(six)
 
 %description python3
@@ -83,7 +79,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1683046738
+export SOURCE_DATE_EPOCH=1685549524
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
